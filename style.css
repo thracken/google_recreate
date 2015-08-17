@@ -22,12 +22,34 @@ a:hover{
   opacity: .75;
   font-family: Arial,sans-serif;
   font-size: 13px;
+  position: relative;
 }
 
 #menu_bar li{
   float:right;
-  padding: 10px 10px;
+  padding: 5px 10px;
   margin: 0;
+  line-height: 45px;
+}
+
+#menu_bar a{
+  margin:0;
+  min-width: 35px;
+  min-height: 35px;
+  display: block;
+}
+
+#apps{
+  background: url("image.png") -130px 35px;
+  opacity: .50;
+}
+
+#notifications{
+  margin: 5px;
+  background: url("image.png") -387px 0px;
+  background-color: rgb(80, 80, 80);
+  opacity: .50;
+  border-radius: 100%;
 }
 
 .logo{
@@ -41,7 +63,7 @@ a:hover{
 }
 
 .search_form{
-  width:100%;
+  width:50%;
   display:block;
   margin:0 auto;
   text-align:center;
@@ -51,7 +73,14 @@ a:hover{
   padding:0;
   margin:0 auto;
   display:block;
-  width:525px;
+  width:570px;
+  height: 25px;
+  background-image: url("mic.gif");
+  background-color: rgba(255, 255, 255, .5);
+  background-blend-mode: color;
+  background-size: 14px, 14px;
+  background-repeat: no-repeat;
+  background-position: 99% center;
 }
 
 .search_form button{
